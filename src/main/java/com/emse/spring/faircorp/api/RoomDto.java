@@ -5,6 +5,7 @@ import com.emse.spring.faircorp.model.Room;
 import com.emse.spring.faircorp.model.Window;
 
 import java.util.Set;
+import java.util.stream.Collectors;
 
 public class RoomDto {
     private Long id;
@@ -13,8 +14,8 @@ public class RoomDto {
     private Double currentTemperature;
     private Double targetTemperature;
 
-    private Set<Heater> heaters;
-    private Set<Window> windows;
+    private Set<Long> heaterIdList;
+    private Set<Long> windowIdList;
 
 
     public RoomDto() {
@@ -26,8 +27,8 @@ public class RoomDto {
         this.floor = room.getFloor();
         this.currentTemperature = room.getCurrentTemperature();
         this.targetTemperature = room.getTargetTemperature();
-        this.heaters = room.getHeaters();
-        this.windows = room.getWindows();
+        this.heaterIdList = room.getHeaters().stream().map(heater -> heater.getId()).collect(Collectors.toSet());
+        this.windowIdList = room.getWindows().stream().map(window -> window.getId()).collect(Collectors.toSet());
     }
 
     public Long getId() {
@@ -70,20 +71,19 @@ public class RoomDto {
         this.targetTemperature = targetTemperature;
     }
 
-    public Set<Heater> getHeaters() {
-        return heaters;
+    public Set<Long> getHeaterIdList() {
+        return heaterIdList;
     }
 
-    public void setHeaters(Set<Heater> heaters) {
-        this.heaters = heaters;
+    public void setHeaterIdList(Set<Long> heaterIdList) {
+        this.heaterIdList = heaterIdList;
     }
 
-    public Set<Window> getWindows() {
-        return windows;
+    public Set<Long> getWindowIdList() {
+        return windowIdList;
     }
 
-    public void setWindows(Set<Window> windows) {
-        this.windows = windows;
+    public void setWindowIdList(Set<Long> windowIdList) {
+        this.windowIdList = windowIdList;
     }
-
 }

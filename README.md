@@ -1,13 +1,14 @@
 # Faircorp Spring framework
 ***
-##Description
+## Description
 ***
 This project was done for the Web and Mobile programming course of the Informatique major for the Ecole des Mines de Saint-Etienne.
 
 The steps used to make this project can be found here under "Spring framework" :
 https://dev-mind.fr/formations.html
 ***
-##Testing
+## Testing
+***
 The clevercloud deployment is accessible here:
 https://faircorp-app-kalomeb.cleverapps.io/swagger-ui/index.html#/
 

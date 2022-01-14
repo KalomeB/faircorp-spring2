@@ -1,6 +1,17 @@
-# faircorp-spring2
+# Faircorp Spring framework
+***
+##Description
+***
+This project was done for the Web and Mobile programming course of the Informatique major for the Ecole des Mines de Saint-Etienne.
 
-clevercloud deployment
+The steps used to make this project can be found here under "Spring framework" :
+https://dev-mind.fr/formations.html
+***
+##Testing
+The clevercloud deployment is accessible here:
 https://faircorp-app-kalomeb.cleverapps.io/swagger-ui/index.html#/
 
-Les méthodes POST pour room, window et heater ne fonctionnent pas, ainsi que switchHeaters et switchWindows
+If you want to test this service locally, run the "Application" class and you can test the methods here:
+http://localhost:8080/swagger-ui/index.html#/
+***
+The project is not done, some updates are needed in the switchHeaters, switchWindows and the POST method for rooms, windows and heaters in order for them to work.

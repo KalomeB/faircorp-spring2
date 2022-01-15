@@ -19,5 +19,5 @@ http://localhost:8080/swagger-ui/index.html#/
 
 The project is not done, some updates are needed in the switchHeaters, switchWindows and the POST method for rooms, windows and heaters in order for them to work.
 
-De la documentaion technique a été ajoutée dans la classe
+Some javadoc was added in the class
 src/main/java/com/emse/spring/faircorp/model/Window.java
